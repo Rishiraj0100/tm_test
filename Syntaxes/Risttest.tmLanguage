@@ -20,7 +20,7 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>punctuation.comment.rist</string>
+          <string>comment.line.double-slash</string>
         </dict>
       </dict>
     </dict>
