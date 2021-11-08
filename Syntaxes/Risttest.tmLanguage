@@ -25,5 +25,7 @@
       </dict>
     </dict>
   </array>
+  <key>scopeName</key>
+  <string>source.rist</string>
 </dict>
 </plist>
