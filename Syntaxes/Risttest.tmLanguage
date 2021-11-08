@@ -13,19 +13,12 @@
   <key>patterns</key>
   <array>
     <dict>
-      <key>begin</key>
-      <string>(^[ \t]+)?(?=//)</string>
-      <key>beginCaptures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>comment.line.double-slash</string>
-        </dict>
-      </dict>
+      <key>match</key>
+      <string>comment.line.double-slash</string>
     </dict>
   </array>
+  
   <key>scopeName</key>
-  <string>source.rist</string>
+  <string>comment.line.double-slash</string>
 </dict>
 </plist>
