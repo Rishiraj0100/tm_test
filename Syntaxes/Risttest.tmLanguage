@@ -19,6 +19,6 @@
   </array>
   
   <key>scopeName</key>
-  <string>comment.line.double-slash</string>
+  <string>source.python</string>
 </dict>
 </plist>
