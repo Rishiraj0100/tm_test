@@ -14,7 +14,7 @@
   <array>
     <dict>
       <key>match</key>
-      <string>comment.line.double-slash</string>
+      <string>//.*</string>
     </dict>
   </array>
   
