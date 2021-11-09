@@ -34,7 +34,7 @@
       <key>match</key>
       <string>(a fn \=\=\> )?(define)</string>
       <key>name</key>
-      <string>entity.name.type</string>
+      <string>keyword.other</string>
     </dict>
     <dict>
       <key>match</key>
