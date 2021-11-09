@@ -30,6 +30,12 @@
       <key>name</key>
       <string>constant.language</string>
     </dict>
+    <dict>
+      <key>match</key>
+      <string>(a fn \=\=\> )?(define)</string>
+      <key>name</key>
+      <string>entity.name.function</string>
+    </dict>
   </array>
   <key>scopeName</key>
   <string>source.rist</string>
