@@ -58,7 +58,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\>([ \t]+))?((define)(?=[ \t]+[a-zA-Z0-9_]*[ \t]*[\{]))|or|class|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case|\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
+      <string>((a fn \=\=\>([ \t]+))?((define)(?=[ \t]+[a-zA-Z0-9_]*[ \t]*[\{]))|or|class|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case|\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=|\+|\-(?!(\=\>))|\*|\:|\.\.(\.)?|\;)</string>
       
       <key>name</key>
       <string>keyword.operator</string>
