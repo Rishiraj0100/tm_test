@@ -44,7 +44,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(\&|\&\&|\|\||\||__(\<\>)|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
+      <string>(\|\||\||__(\<\>)|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
