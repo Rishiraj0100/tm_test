@@ -44,7 +44,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|global|nonlocal|match|case|\+@|@\+)</string>
+      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|global|nonlocal|ma(t)c(h)|c(a)s(e)|\+@|@\+)</string>
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
