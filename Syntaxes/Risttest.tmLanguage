@@ -20,6 +20,14 @@
     </dict>
     <dict>
       <key>match</key>
+      <string>((//.*$(?&lt;!(;)))|(.?(?!(;))$)(?&lt;!(;)))</string>
+      <key>name</key>
+      <string>invalid.illegal</string>
+      <key>comment</key>
+      <string>Line should must end with ";"</string>
+    </dict>
+    <dict>
+      <key>match</key>
       <string>//.*</string>
       <key>name</key>
       <string>comment.line.double-slash</string>
@@ -50,7 +58,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case|\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
+      <string>((a fn \=\=\> )?(define)|or|class|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case|\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
       
       <key>name</key>
       <string>keyword.operator</string>
