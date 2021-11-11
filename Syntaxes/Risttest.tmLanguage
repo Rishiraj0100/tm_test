@@ -32,13 +32,19 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(print|bool|int|str|type|dict)</string>
+      <string>(print|input)</string>
       <key>name</key>
       <string>variable.language</string>
     </dict>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|global|nonlocal|\+@|@\+)</string>
+      <string>(int|str|bool|type|dict)</string>
+      <key>name</key>
+      <string>variable.language</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|global|nonlocal|match|case|\+@|@\+)</string>
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
