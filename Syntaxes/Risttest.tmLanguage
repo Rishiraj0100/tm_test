@@ -51,7 +51,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(def(?!(ine))|from|import|async)</string>
+      <string>((def(?!(ine))|from|import|async)|(.?(?!(;))$)(?<!(;)))</string>
       <key>name</key>
       <string>invalid.illegal</string>
     </dict>
