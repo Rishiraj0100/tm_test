@@ -45,6 +45,13 @@
     </dict>
     <dict>
       <key>match</key>
+      <string>(\+\@|\@\+|\|\||\||__(\<|\>|//)|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
+      
+      <key>name</key>
+      <string>keyword.operator</string>
+    </dict>
+    <dict>
+      <key>match</key>
       <string>([a-zA-Z0-9_]*(\{)|\})</string>
       <key>name</key>
       <string>entity.name.function</string>
