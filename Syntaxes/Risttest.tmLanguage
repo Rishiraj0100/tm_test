@@ -14,6 +14,12 @@
   <array>
     <dict>
       <key>match</key>
+      <string>((def(?!(ine))|from|import|async)|(.?(?!(;))$)(?&lt;!(;))|//.*(?&lt;!(;)))</string>
+      <key>name</key>
+      <string>invalid.illegal</string>
+    </dict>
+    <dict>
+      <key>match</key>
       <string>//.*</string>
       <key>name</key>
       <string>comment.line.double-slash</string>
@@ -54,12 +60,6 @@
       <string>([a-zA-Z0-9_]*(\{)|\})</string>
       <key>name</key>
       <string>entity.name.function</string>
-    </dict>
-    <dict>
-      <key>match</key>
-      <string>((def(?!(ine))|from|import|async)|(.?(?!(;))$)(?&lt;!(;)))</string>
-      <key>name</key>
-      <string>invalid.illegal</string>
     </dict>
   </array>
   <key>scopeName</key>
