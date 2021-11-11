@@ -2,13 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>fileTypes</key>
-  <array>
-    <string>rist</string>
-  </array>
+<key>fileTypes</key>
+<array>
+  <string>rist</string>
+</array>
 
-  <key>name</key>
-  <string>RistLang</string>
+<key>name</key>
+<string>RistLang</string>
+
+<key>scopeName</key>
+<string>source.rist</string>
+
+<key>patterns</key>
+<array>
+  <dict>
+    <key>include</key>
+    <string>#rist</string>
+  </dict>
+</array>
+
+<key>repository</key>
+<dict>
+
+<key>invalids</key>
+<dict>
 
   <key>patterns</key>
   <array>
@@ -26,6 +43,13 @@
       <key>comment</key>
       <string>Line should must end with ";"</string>
     </dict>
+  </array>
+</dict>
+
+<key>utils</key>
+<dict>
+  <key>patterns</key>
+  <array>
     <dict>
       <key>match</key>
       <string>//.*</string>
@@ -56,10 +80,31 @@
       <key>name</key>
       <string>storage.type</string>
     </dict>
+  </array>
+</dict>
+
+<key>operators</key>
+<dict>
+  <key>patterns</key>
+  <array>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\>([ \t]+))?((define)(?=[ \t]+[a-zA-Z0-9_]*[ \t]*[\{]))|or|class|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case|\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=(?!(\>|\-))|\+|\-(?!(\=\>))|\*|\:|\.\.(\.)?|\;)</string>
-      
+      <string>((a fn \=\=\>([ \t]+))?((define)(?=[ \t]+[a-zA-Z0-9_]*[ \t]*[\{])))</string>
+
+      <key>name</key>
+      <string>keyword.operator</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(or|class|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case)</string>
+
+      <key>name</key>
+      <string>keyword.operator</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=(?!(\>|\-))|\+|\-(?!(\=\>))|\*|\:|\.\.(\.)?|\;|\!\=)</string>
+
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
@@ -70,7 +115,25 @@
       <string>entity.name.function</string>
     </dict>
   </array>
-  <key>scopeName</key>
-  <string>source.rist</string>
+</dict>
+
+<key>rist</key>
+<dict>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>include</key>
+      <string>#invalids</string>
+
+      <key>include</key>
+      <string>#utils</string>
+
+      <key>include</key>
+      <string>#operators</string>
+    </dict>
+  </array>
+</dict>
+
+</dict>
 </dict>
 </plist>
