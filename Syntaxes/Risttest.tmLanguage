@@ -32,7 +32,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\> )?(define)|or|and|var|as|\+@|@\+)</string>
+      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|\+@|@\+)</string>
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
