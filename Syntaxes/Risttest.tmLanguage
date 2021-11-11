@@ -38,7 +38,8 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|global|nonlocal|match|case|\+@|@\+|\|\||\||__(\<|\>|//)|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string>
+      <string>((a fn \=\=\> )?(define)|or|and|pass|return|break|while|for|in|continue|var|as|global|nonlocal|match|case)</string>
+      <!-- |\+@|@\+|\|\||\||__(\<|\>|//)|\=|\+|\-|\*|\:|\.\.(\.)?|\;)</string> -->
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
