@@ -104,7 +104,14 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(or|class|and|pass|return|break|while|for|in|if|else|continue|try|except|finally|as(?=( ))|global|nonlocal|match|case)</string>
+      <string>((or|class|an|while|for|in|if|elif|else|as|global|nonlocal|match|case)(?=( )))</string>
+
+      <key>name</key>
+      <string>keyword.operator</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(return|break|continue|((else|try|except|finally)?=(\:)))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
