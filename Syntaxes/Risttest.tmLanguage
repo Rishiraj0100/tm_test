@@ -18,10 +18,12 @@
   <dict>
     <key>include</key>
     <string>#invalids</string>
-
+  </dict>
+  <dict>
     <key>include</key>
     <string>#utils</string>
-
+  </dict>
+  <dict>
     <key>include</key>
     <string>#operators</string>
   </dict>
