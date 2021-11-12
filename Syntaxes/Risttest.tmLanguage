@@ -111,7 +111,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(return|break|continue|((else|try|except|finally)?=(\:)))</string>
+      <string>(r(eturn|aise)|break|continue|(else|try|except|finally)(?=(\:)))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
