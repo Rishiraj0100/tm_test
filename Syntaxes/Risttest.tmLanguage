@@ -17,7 +17,13 @@
 <array>
   <dict>
     <key>include</key>
-    <string>#rist</string>
+    <string>#invalids</string>
+
+    <key>include</key>
+    <string>#utils</string>
+
+    <key>include</key>
+    <string>#operators</string>
   </dict>
 </array>
 
@@ -113,23 +119,6 @@
       <string>([a-zA-Z0-9_]*(\{)|\})</string>
       <key>name</key>
       <string>entity.name.function</string>
-    </dict>
-  </array>
-</dict>
-
-<key>rist</key>
-<dict>
-  <key>patterns</key>
-  <array>
-    <dict>
-      <key>include</key>
-      <string>#invalids</string>
-
-      <key>include</key>
-      <string>#utils</string>
-
-      <key>include</key>
-      <string>#operators</string>
     </dict>
   </array>
 </dict>
