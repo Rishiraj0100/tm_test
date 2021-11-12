@@ -10,6 +10,9 @@
 <key>name</key>
 <string>RistLang</string>
 
+<key>uuid</key>
+<string>B86EFDD2-EF94-474A-8C07-2B263DDB4419</string>
+
 <key>scopeName</key>
 <string>source.rist</string>
 
