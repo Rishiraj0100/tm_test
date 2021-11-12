@@ -47,7 +47,7 @@
       <key>match</key>
       <string>(.*?$(?&lt;=(\/\/\:Rist\:\/\/(NC);)))</string>
       <key>name</key>
-      <string>constant.other</string>
+      <string>storage.modifier</string>
     </dict>
   </array>
 </dict>
