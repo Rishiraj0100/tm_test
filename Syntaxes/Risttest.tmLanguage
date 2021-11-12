@@ -51,6 +51,14 @@
       <key>comment</key>
       <string>Line should must end with ";"</string>
     </dict>
+    <dict>
+      <key>match</key>
+      <string>((try|finally|else)(?!(\:)))</string>
+      <key>name</key>
+      <string>invalid.illegal</string>
+      <key>comment</key>
+      <string>try, finally and else always needs to come before ":"</string>
+    </dict>
   </array>
 </dict>
 
@@ -111,7 +119,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(r(eturn|aise)|break|continue|(else|try|except|finally)(?=(\:)))</string>
+      <string>(r(eturn|aise)|break|continue|except|(else|try|finally)(?=(\:)))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
