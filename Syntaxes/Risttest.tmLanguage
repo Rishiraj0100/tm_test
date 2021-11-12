@@ -70,7 +70,7 @@
       <key>match</key>
       <string>(.*?$(?&lt;=(:Rist:(NC);)))</string>
       <key>name</key>
-      <string>storage.modifier</string>
+      <string>constant.other</string>
     </dict>
     <dict>
       <key>match</key>
