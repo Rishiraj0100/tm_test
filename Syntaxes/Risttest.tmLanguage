@@ -64,7 +64,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>((//.*$(?&lt;!(;)))|(.(?!(;))$)(?&lt;!(;)))</string>
+      <string>((.(?!(;))$)(?&lt;!(;))|(//.*$(?&lt;!(;))))</string>
       <key>name</key>
       <string>invalid.illegal</string>
       <key>comment</key>
