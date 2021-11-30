@@ -58,7 +58,7 @@
   <array>
     <dict>
       <key>match</key>
-      <string>((def(?!(ine)))|from|import|async)(?=( ))</string>
+      <string>(?=([ \t]|;$))((def(?!(ine)))|from|import|async)(?=([ \t]|;$))</string>
       <key>name</key>
       <string>invalid.illegal</string>
     </dict>
@@ -69,14 +69,6 @@
       <string>invalid.illegal</string>
       <key>comment</key>
       <string>Line should must end with ";"</string>
-    </dict>
-    <dict>
-      <key>match</key>
-      <string>((try|finally|else)(?!(\:)))</string>
-      <key>name</key>
-      <string>invalid.illegal</string>
-      <key>comment</key>
-      <string>try, finally and else always needs to come before ":"</string>
     </dict>
   </array>
 </dict>
@@ -124,28 +116,28 @@
   <array>
     <dict>
       <key>match</key>
-      <string>((a fn \=\=\>([ \t]+))?((define)(?=[ \t]+[a-zA-Z0-9_]*[ \t]*[\{])))</string>
+      <string>(?:(^|[ \t]))(a fn \=\=\> )?(define)(?=([ \t]|;$))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
     <dict>
       <key>match</key>
-      <string>((or|class|an|while|for|in|if|elif|else|as|global|nonlocal|match|case)(?=( )))</string>
+      <string>(?:(^|[ \t]))(or|class|an|while|for|in|if|elif|else|try|finally|as|global|nonlocal|match|case)(?=([ \t]|;$))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
     <dict>
       <key>match</key>
-      <string>(r(eturn|aise)|break|continue|except|(else|try|finally)(?=(\:)))</string>
+      <string>(?:(^|[ \t]))(r(eturn|aise)|break|continue|except)(?=([ \t]|;$))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
     </dict>
     <dict>
       <key>match</key>
-      <string>(\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=(?!(\>|\-))|\+|\-(?!(\=\>))|\*|\:|\.\.(\.)?|\;|\!\=)</string>
+      <string>(?:(^|[ \t]))(\+@|@\+|\|\||\||__(//|&lt;|&gt;)|/|\=(?!(\>|\-))|\+|\-(?!(\=\>))|\*|\:|\.\.(\.)?|\;|\!\=)(?=([ \t]|;$))</string>
 
       <key>name</key>
       <string>keyword.operator</string>
